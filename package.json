@@ -1,5 +1,6 @@
 {
   "name": "yahtzee",
+  "homepage": "https://may-ank0813.github.io/Yahtzee_Game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,8 @@
     "@fortawesome/fontawesome-free": "^5.8.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
